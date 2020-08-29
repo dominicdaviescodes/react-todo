@@ -12,7 +12,12 @@ function App() {
       <header>
         <h1>A React Todo List</h1>
       </header>
-      <Form setInputText={setInputText} />
+      <Form
+        inputText={inputText}
+        todos={todos}
+        setTodos={setTodos}
+        setInputText={setInputText}
+      />
       <TodoList />
     </div>
   );
